@@ -1,6 +1,6 @@
 {
     "name": "reva2/config-service-provider",
-    "description": "A config ServiceProvider for Silex with support for php, json and yaml.",
+    "description": "A config ServiceProvider for Silex 2.x with support for php, json and yaml.",
     "keywords": ["silex"],
     "license": "MIT",
     "authors": [
