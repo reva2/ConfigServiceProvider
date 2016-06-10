@@ -1,6 +1,6 @@
 # ConfigServiceProvider
 
-[![Build Status](https://travis-ci.org/reva2/ConfigServiceProvider.svg?branch=master)](https://travis-ci.org/reva2/ConfigServiceProvider)
+[![Build Status](https://travis-ci.org/reva2/ConfigServiceProvider.svg?branch=master)](https://travis-ci.org/reva2/ConfigServiceProvider) [![Coverage Status](https://coveralls.io/repos/github/reva2/ConfigServiceProvider/badge.svg?branch=master)](https://coveralls.io/github/reva2/ConfigServiceProvider?branch=master)
 
 A config ServiceProvider for [Silex 2](http://silex.sensiolabs.org) with support
 for php, json, yaml, and toml.
