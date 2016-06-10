@@ -1,7 +1,9 @@
 # ConfigServiceProvider
 
-A config ServiceProvider for [Silex](http://silex.sensiolabs.org) with support
+A config ServiceProvider for [Silex 2](http://silex.sensiolabs.org) with support
 for php, json, yaml, and toml.
+
+This is fork of [igorw/config-service-provider](https://github.com/igorw/ConfigServiceProvider).
 
 ## Usage
 

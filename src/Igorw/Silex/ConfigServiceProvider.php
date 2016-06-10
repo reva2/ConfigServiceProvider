@@ -11,8 +11,8 @@
 
 namespace Igorw\Silex;
 
-use Silex\Application;
-use Silex\ServiceProviderInterface;
+use Pimple\Container;
+use Pimple\ServiceProviderInterface;
 
 class ConfigServiceProvider implements ServiceProviderInterface
 {
@@ -40,10 +40,10 @@ class ConfigServiceProvider implements ServiceProviderInterface
         ));
     }
 
-    public function register(Application $app)
+    public function register(Container $app)
     {
         $config = $this->readConfig();
-
+        
         foreach ($config as $name => $value)
             if ('%' === substr($name, 0, 1))
                 $this->replacements[$name] = (string) $value;
@@ -51,11 +51,7 @@ class ConfigServiceProvider implements ServiceProviderInterface
         $this->merge($app, $config);
     }
 
-    public function boot(Application $app)
-    {
-    }
-
-    private function merge(Application $app, array $config)
+    private function merge(Container $app, array $config)
     {
         if ($this->prefix) {
             $config = array($this->prefix => $config);

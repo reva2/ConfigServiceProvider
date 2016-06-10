@@ -1,5 +1,9 @@
 CHANGELOG
 =========
+* 2.0.0 (2016-06-10)
+
+  * BC break: Switch to 2.x branch of silex/silex
+  * BC break: Switch to 3.x branch of symfony/yaml
 
 * 1.2.2 (2014-07-06)
 

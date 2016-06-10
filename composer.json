@@ -1,5 +1,5 @@
 {
-    "name": "igorw/config-service-provider",
+    "name": "reva2/config-service-provider",
     "description": "A config ServiceProvider for Silex with support for php, json and yaml.",
     "keywords": ["silex"],
     "license": "MIT",
@@ -10,19 +10,20 @@
         },
         {
             "name": "Contributors",
-            "homepage": "https://github.com/igorw/ConfigServiceProvider/contributors"
+            "homepage": "https://github.com/reva2/ConfigServiceProvider/graphs/contributors"
         }
     ],
     "require": {
-        "silex/silex": "~1.0"
+        "silex/silex": "~2.0"
     },
     "require-dev": {
-        "symfony/yaml": "~2.1",
-        "jamesmoss/toml": "~0.1"
+        "symfony/yaml": "~3.1",
+        "jamesmoss/toml": "~1.1",
+        "phpunit/phpunit": "~4.8"
     },
     "suggest": {
-        "symfony/yaml": "~2.1",
-        "jamesmoss/toml": "~0.1"
+        "symfony/yaml": "~3.1",
+        "jamesmoss/toml": "~1.1"
     },
     "autoload": {
         "psr-0": { "Igorw\\Silex": "src" }
